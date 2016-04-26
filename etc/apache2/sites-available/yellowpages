@@ -1,0 +1,36 @@
+i<VirtualHost *:80>
+ServerName oncall.nm.4x3i.com
+ServerAlias oncall.nm.4x3i.com
+RewriteEngine  on
+RewriteEngine on
+ReWriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+CustomLog /opt/contactMan/logs/access.log combined
+ErrorLog /opt/contactMan/logs/error.log
+
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName oncall.nm.4x3i.com
+    SSLEngine On
+    SSLCertificateFile /etc/ssl/crt/nm.4x3i.com.crt
+    SSLCertificateKeyFile /etc/ssl/crt/nm.4x3i.com.key
+    SSLCACertificateFile /etc/ssl/crt/ca.crt
+    RewriteEngine on
+    CustomLog /opt/contactMan/logs/access.log combined
+    ErrorLog /opt/contactMan/logs/error.log
+
+    DocumentRoot /opt/contactMan/html
+
+    <Directory /opt/contactMan/html>
+        Options Indexes FollowSymLinks MultiViews
+        Options +ExecCGI
+        DirectoryIndex index.py
+        AddHandler cgi-script .py
+        AllowOverride None
+        Order allow,deny
+        allow from all
+    </Directory>
+
+</VirtualHost>

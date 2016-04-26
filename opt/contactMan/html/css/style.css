@@ -1,0 +1,282 @@
+body{
+background-color: #E8E8FA;
+width: 100%;
+height: 100%;
+margin: 0px;
+}
+
+.title {
+margin: 0px;
+width: 100%;
+background: black none repeat scroll 0% 0%;
+padding: 10px 0px;
+height: 5%;
+}
+
+#header {
+float: left;
+width: 60%;
+}
+
+#header p{
+margin: 0px;
+font-family: Arial;
+font-size: 20px;
+text-align: right;
+color: #FFFFFF;
+font-weight: bold;
+opacity: 0.5;
+}
+
+#header a{
+color: #FFFFFF;
+text-decoration: none;
+}
+
+#titlenav {
+width: 40%;
+height: inherit;
+float: right;
+}
+
+#titlenav ul{
+text-align: right;
+font-weight: bold;
+font-family: Arial;
+margin: .2em;
+position: inherit;
+list-style-type: none;
+}
+
+#titlenav li{
+display: inline;
+color: #FFFFFF;
+padding-right: 15px;
+}
+
+#titlenav a{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#titlenav p{
+color: #FFFFFF;
+font-family: helvetica, arial, sans-serif;
+font-size: 1em;
+text-align: right; 
+}
+
+#titlenav form{
+color: #FFFFFF;
+font-family: helvetica, arial, sans-serif;
+font-size: 1em;
+text-align: right; 
+}
+
+#titlenav ul{
+padding: 0;
+list-style: none;
+}
+
+#titlenav ul li{
+display: inline-block;
+position: relative;
+line-height: 21px;
+text-align: left;
+}
+
+#titlenav ul li a{
+display: block;
+padding: 8px 25px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+#titlenav ul li a:hover{
+color: #FFFFFF;
+background: grey;
+}
+
+
+#titlenav ul li ul.dropdown{
+min-width: 125px; /* Set width of the dropdown */
+background: black;
+display: none;
+position: absolute;
+z-index: 999;
+left: 0;
+}
+
+#titlenav ul li:hover ul.dropdown{
+ display: block;	/* Display the dropdown */
+}
+
+#titlenav  ul li ul.dropdown li{
+display: block;
+}
+
+
+#nologin {
+color: #FFFFFF;
+text-align:right;
+font-family: helvetica, arial, sans-serif;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+#nologin font {
+opacity: .5;
+}
+
+#nologin input{
+border-radius: 5px;
+}
+
+.search {
+background: #FFF none repeat scroll 0% 0%;
+width: 60%;
+height: 100%;
+margin-left: 20%;
+margin-top: 1%;
+max-height: 100%;
+overflow: scroll;
+}
+
+.search p {
+font-family: Arial;
+margin-left: 15%;
+}
+.search h1{
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 2em;
+line-height: 1.5em;
+letter-spacing: -0.05em;
+margin-bottom: 20px;
+padding: 0.1em 0px;
+color: #444;
+position: relative;
+overflow: hidden;
+white-space: nowrap;
+text-align: center;
+}
+
+.search h2{
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 1em;
+line-height: 1.5em;
+letter-spacing: -0.05em;
+margin-bottom: 20px;
+padding: 0.1em 0px;
+color: Red;
+position: relative;
+overflow: hidden;
+white-space: nowrap;
+text-align: center;
+}
+
+#searchfield {
+display: block;
+width: 100%;
+text-align: center;
+margin-bottom: 35px;
+}
+
+#searchfield form {
+display: inline-block;
+background: #EEEFED none repeat scroll 0% 0%;
+padding: 5px;
+border-radius: 3px;
+margin: 5px 0px 0px;
+font-family: Arial;
+}
+
+#searchfield form .biginput {
+width: 600px;
+height: 40px;
+padding: 0px 10px;
+background-color: #FFF;
+border: 1px solid #C8C8C8;
+border-radius: 3px;
+color: #AEAEAE;
+font-weight: normal;
+font-size: 1.5em;
+transition: all 0.2s linear 0s;
+font-family: Arial;
+color: Black;
+}
+
+#searchfield form .reginput {
+width: 500px;
+height: 25px;
+padding: 0px 10px;
+background-color: #FFF;
+border: 1px solid #C8C8C8;
+border-radius: 3px;
+color: #AEAEAE;
+font-weight: normal;
+font-size: 1.2em;
+transition: all 0.2s linear 0s;
+font-family: Arial;
+color: Black;
+}
+
+#searchfield form .nologin {
+width: 300px;
+height: 25px;
+padding: 0px 10px;
+background-color: #FFF;
+border: 1px solid #C8C8C8;
+border-radius: 3px;
+color: #AEAEAE;
+font-weight: normal;
+font-size: 1.2em;
+transition: all 0.2s linear 0s;
+font-family: Arial;
+color: Black;
+}
+
+input, textarea {
+box-sizing: border-box;
+outline: medium none;
+}
+
+.sresult {
+width: 100%;
+}
+
+.mycount {
+width: inherit;
+background-color: aliceblue;
+}
+
+.mycount thead {
+font-family: Arial;
+background-color: grey;
+color: whitesmoke;
+font-size: medium;
+}
+
+.mycount tbody {
+text-align: center;
+font-family: Arial;
+font-size: initial;
+}
+
+.searchme {
+background: #FFF none repeat scroll 0% 0%;
+width: 60%;
+height: 100%;
+margin-left: 20%;
+margin-top: 1%;
+}
+
+.sresult  fieldset {
+font-family: Arial;
+word-spacing: 1px;
+background-color: azure;
+}
+
+fieldset a{
+cursor: pointer;
+text-decoration: none;
+}
