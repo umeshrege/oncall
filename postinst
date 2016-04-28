@@ -1,4 +1,0 @@
-#!/bin/bash
-
-chown root:www-data /opt/contactMan/
-chmod 2775 /opt/contactMan/

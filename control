@@ -1,8 +1,0 @@
-Package: oncall
-Version: 1.1442596138-01nm
-Priority: standard
-Depends:  apache2,mysql-server,fk-ops-wildcard-certs
-Architecture: all
-Maintainer: ricky dj <rickydjohn@gmail.com>
-Description: Console to maintain on-call database
-
