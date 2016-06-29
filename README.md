@@ -12,5 +12,5 @@ Features:
 
 
 #Contributors
-github.com/rickydjohn
-github.com/umeshrege
+1. <a href="github.com/rickydjohn">rickydjohn</a>
+2. <a href="github.com/umeshrege">umeshrege</a>
