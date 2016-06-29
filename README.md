@@ -12,5 +12,5 @@ Features:
 
 
 #Contributors
-1. Ricky DJ
-2. Umesh Rege
+github.com/rickydjohn
+github.com/umeshrege
